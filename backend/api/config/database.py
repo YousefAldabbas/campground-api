@@ -8,7 +8,7 @@ load_dotenv()
 
 
 SQLALCHEMY_DATABASE_URL = str(os.getenv("SQLALCHEMY_DATABASE_URL"))
-
+#postgresql+psycopg2://username:password@localhost/database-name
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL
 )
